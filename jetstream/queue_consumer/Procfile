@@ -1,0 +1,7 @@
+queue-group-0: go run main.go
+queue-group-1: go run main.go
+queue-group-2: go run main.go
+queue-group-3: go run main.go
+queue-group-4: go run main.go
+queue-group-5: go run main.go
+queue-group-6: go run main.go

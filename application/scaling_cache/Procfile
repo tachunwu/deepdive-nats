@@ -1,0 +1,8 @@
+# ambassador-0: ./../../nats-server -js -p 4222 -V -sd data/ambassador-0 -m 8222
+pool-0: go run ./cache_instance --subject=pool --routers=localhost:4222
+pool-1: go run ./cache_instance --subject=pool --routers=localhost:4222
+pool-2: go run ./cache_instance --subject=pool --routers=localhost:4222
+shard-0: go run ./cache_instance --subject=shard.0 --routers=localhost:4222
+shard-1: go run ./cache_instance --subject=shard.1 --routers=localhost:4222
+shard-2: go run ./cache_instance --subject=shard.2 --routers=localhost:4222
+
